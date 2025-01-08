@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    max-width: 13000px;
+    min-width: 400px;
+    text-align: center;
+}
+
+.topo{
+    display: flex;
+    height: 100%;
+    max-width: 13000px;
+    min-width: 400px;
+    text-align: center;
+}
+
+.letras{
+    color: white;
+    min-width: 100px;
+}
+
+.imagem-container {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-container img {
+    width: 100%;
+    height: auto;
+}
+
+.imagem-container .letras {
+    position: absolute;
+    bottom: 60px; 
+    right: 40%;   
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    font-size: 23px; 
+    border-radius: 5px; 
+    min-width: 100px;
+}
+
+.opcao{
+    margin: 50px;
+    text-align: left;
+}
+
+.escolha{
+    color: white;
+    background-color: red;
+    margin: 50px;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.escolha:hover{
+    background-color: aqua;
+    color: black;
+}
+
+
+.logo{
+    background-size: cover;
+    width: 10vw;
+    background-color: white;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+
+}
+
+
+.botoes {
+    padding: 20px;
+    top: -20%;
+}
+
+.botao img {
+    max-width: 100px;
+}
+
+.caixa{
+    position:fixed;
+    bottom: 0;
+    right: 0;
+
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rodape{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 50px, 200px;
+    padding: 100px;
+}
+
+/*esconde*/
+.personagem{
+    display: none;
+    width: 100%;
+}
+
+
+/*revela*/
+.personagem.selecionado{
+    display: block;
+}
+
+.botao{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botao img{
+    width: 100px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.botao.selecionado{
+    transform: scale(1.2);
+    box-shadow: 0,0,10px #D9D9D9;
+}
+
+.letras{
+    line-height: 60px;
+    justify-items: flex-start;
+
+    font-size: 18px;
+    padding: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* Para telas pequenas (como smartphones) */
+@media (max-width: 600px) {
+    .topo {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os elementos */
+    }
+
+    .opcao {
+        margin: 20px 0; /* Ajusta a margem */
+    }
+
+    .escolha {
+        padding: 15px; /* Ajusta o padding para botões menores */
+        margin: 10px; /* Margens menores */
+    }
+
+    .imagem-container .letras {
+        font-size: 18px; /* Diminui o tamanho da fonte */
+    }
+
+    .titulo {
+        font-size: 24px; /* Diminui o tamanho do título */
+    }
+
+    .caixa {
+        width: 100px; /* Ajusta a largura da caixa */
+        gap: 10px; /* Diminui o espaço entre os botões */
+    }
+
+    .letras{
+        line-height: 10px;
+        justify-items: flex-start;
+
+        font-size: 2px;
+        padding: 2px;
+        line-height: 17px;
+        text-align: center;
+    }
+}
+
+/* Para telas médias (como tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .topo {
+        flex-direction: row; /* Mantém em linha, mas pode ser flexível */
+        justify-content: space-between; /* Espaçamento entre os elementos */
+    }
+
+    .escolha {
+        padding: 20px; /* Ajusta o padding */
+    }
+
+    .titulo {
+        font-size: 28px; /* Ajusta o tamanho do título */
+    }
+
+    .caixa {
+        width: 150px; /* Ajusta a largura da caixa */
+    }
+}
+
+/* Para telas grandes (desktop) */
+@media (min-width: 1025px) {
+    .caixa {
+        width: 180px; /* Mantém largura original */
+    }
+}

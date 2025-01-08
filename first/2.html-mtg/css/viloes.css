@@ -1,0 +1,133 @@
+/*Todos os trabalhos css*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    max-height: 100px;
+    padding: 30px;
+}
+
+.logo img{
+    width: 75px;
+    float: left;
+    border-radius: 20%;
+}
+
+.cabeçalho{
+    background-color: white;
+    float: right;
+    margin: 30px;
+    padding: 45px;
+    border-radius: 50%;
+}
+
+.cabeçalho a{
+    background-color: blueviolet;
+    color: yellow;
+    margin: 50px;
+    padding: 40px;
+    text-decoration: none;
+    border-radius: 30%;
+}
+
+.cabeçalho a:hover {
+    background-color: blue;
+}
+
+body{
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 30px;
+    margin-top: 200px;
+    text-shadow: 2px 2px 3px black;
+}
+.container{
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+.grid-container img{
+    width: 300px;
+    padding: 10px;
+}
+
+.container p{
+    text-align: justify;
+}
+
+.grid-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    gap: 10px;
+    margin-left: 200px;
+}
+
+.column {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 200px;
+}
+
+.column1 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 10px;
+}
+
+.item {
+    border-radius: 40%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.tudo{
+    text-align: center;
+}
+
+a{
+    text-decoration-line: none;
+    color: yellow;
+}
+
+.ajani:hover img{
+    background-color: yellow;
+    border-radius: 40%;
+}
+
+

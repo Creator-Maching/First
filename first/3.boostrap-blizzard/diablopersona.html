@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>JQuery</title>
+  <style>
+    body {
+        background-image: url('css/imagens/skyfalldiablo.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        color: white; 
+      }
+    .title-top {
+      text-align: center;
+      text-shadow: 2px 2px 3px black;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin: 0 auto;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-dark text-white">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+    <div class="container-fluid">
+      <img src="css/imagens/gificon.gif" height="70px" alt="Logo">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src= "css/imagens/Diablo-corpo.jpg" class="card-img-top" alt="anduin">
+          <div class="card-body">
+            <h5 class="card-title">Diablo</h5>
+            <p class="card-text">
+                Raça: Demônio<br>
+                O Senhor do Terror e principal antagonista da série. Ele é o mais poderoso dos Prime Evils e usa o medo como arma para corromper e controlar os mortais. Diablo busca a dominação total, tentando várias vezes destruir Santuário e reinar sobre o universo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/baal-corpo.jpg" class="card-img-top" alt="starcraft">
+          <div class="card-body">
+            <h5 class="card-title">Baal</h5>
+            <p class="card-text">
+                Raça: Demônio<br>
+                O Senhor da Destruição e irmão de Diablo e Mephisto. Ele é impiedoso e se alimenta do caos e da devastação. Em Diablo II, Baal tenta corromper a Pedra do Mundo no Monte Arreat para servir aos propósitos demoníacos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/Mephisto-corpo.jpg" class="card-img-top" alt="diablo">
+          <div class="card-body">
+            <h5 class="card-title">Mephisto</h5>
+            <p class="card-text">
+                Raça: Demônio<br>
+                O Senhor do Ódio e o mais astuto dos Prime Evils. Mephisto é mestre na manipulação emocional e psicológica, instigando guerras e conflitos para espalhar o ódio. Ele desempenha um papel vital na corrupção da Igreja de Zakarum em Diablo II.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/Azmodan.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Azmodan</h5>
+            <p class="card-text">
+                Raça: Demônio<br>
+                O Senhor do Pecado, também presente em Diablo III. Ele lidera os exércitos do inferno, buscando a dominação de Santuário com táticas militares e corrupção dos mortais através de desejos e ambições sombrias.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/Belial-corpo.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Belial</h5>
+            <p class="card-text">
+                Raça: Demônio<br>
+                O Senhor da Mentira, um dos principais antagonistas de Diablo III. Ele é especialista em engano e manipulação, usando sua astúcia para instigar conflitos e infiltrar-se entre os humanos como um "conselheiro".
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/Duriel-corpo.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Duriel</h5>
+            <p class="card-text">
+                Raça: Demônio<br>
+                O Senhor da Dor, também um Lesser Evil. Duriel é cruel e sádico, focado em causar sofrimento físico. Ele guarda a tumba de Tal Rasha em Diablo II e é conhecido por sua luta brutal no calor opressivo do local.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/Andariel-corpo.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Andariel</h5>
+            <p class="card-text">
+                Raça: Demônio<br>
+                A Donzela da Angústia, um dos Lesser Evils. Andariel espalha sofrimento e dor, frequentemente atuando como uma serva dos Prime Evils. Ela é uma chefe importante em Diablo II, localizada no Mosteiro das Irmãs do Olho Cego.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/Tyrael.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Tyrael</h5>
+            <p class="card-text">
+                Raça: Anjo<br>
+                O Arcanjo da Justiça, uma figura central na série. Tyrael valoriza a humanidade e sacrifica sua imortalidade para se tornar mortal e proteger Santuário. Sua arma icônica é a Espada El'druin, que simboliza sua determinação em preservar o equilíbrio e derrotar o mal.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/Auriel.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Auriel</h5>
+            <p class="card-text">
+                Raça: Anjo<br>
+                A Arcanja da Esperança. Uma presença inspiradora entre os anjos, Auriel usa a Alvorada, uma fita brilhante que canaliza seu poder. Ela acredita no potencial da humanidade e é uma voz moderada no Conselho de Angiris.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/Itherael.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Itherael</h5>
+            <p class="card-text">
+                Raça: Anjo<br>
+                O Arcanjo do Destino. Ele usa a Véu do Destino, um artefato que permite ver todas as linhas do tempo. Itherael é um observador neutro, raramente intervindo diretamente, mas é fundamental para entender os grandes planos do cosmos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/malthael-corpo.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Malthael</h5>
+            <p class="card-text">
+                Raça: Anjo<br>
+                O primeiro e mais poderoso druida de Azeroth, líder dos Elfos Noturnos e defensor do equilíbrio natural. Mestre do Sonho Esmeralda, luta contra ameaças como a Legião Ardente e o Pesadelo Esmeralda.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/imperius.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Imperius</h5>
+            <p class="card-text">
+                Raça: Anjo<br>
+                O Arcanjo da Bravura e líder do Conselho de Angiris. Orgulhoso e impetuoso, Imperius frequentemente entra em conflito com Tyrael devido à sua visão rígida sobre o que é certo e errado. Ele é um guerreiro formidável e defensor ferrenho do Céu.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/Inárius-corpo.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Inárius</h5>
+            <p class="card-text">
+                Raça: Anjo<br>
+                Um anjo renegado que abandona os Céus para criar Santuário ao lado de Lilith. Ele busca paz, mas eventualmente sucumbe ao desejo de controle e poder, tornando-se uma figura controversa na história da criação do mundo mortal.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/lilith-corpo.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Lilith</h5>
+            <p class="card-text">
+                Raça: Demônio<br>
+                A Filha do Ódio e mãe dos Nephalem, Lilith desempenha um papel crucial na criação de Santuário. Ela é uma figura complexa, alternando entre proteger os humanos e buscar poder absoluto. Ela é a principal antagonista em Diablo IV.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-danger">
+          <img src="css/imagens/oguerreiro.jpg" class="card-img-top" alt="overwatch">
+          <div class="card-body">
+            <h5 class="card-title">Aidan, o Guerreiro</h5>
+            <p class="card-text">
+                Raça: Humano<br>
+                Protagonista do primeiro Diablo, Aidan é o Príncipe de Khanduras, que viaja para Tristram para enfrentar Diablo. Ele eventualmente sucumbe à influência do demônio ao aprisioná-lo em si mesmo, tornando-se o Dark Wanderer em Diablo II.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">Imagens de © 2024 Blizzard Entertainment. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="script_jquery.js"></script>
+</body>
+</html>

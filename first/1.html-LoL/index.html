@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/meu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>My First Front-End</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Welcome to my website</h1>
+            <p id="description">Please select your champion:</p>
+            <div class="topo">
+                <img src="css/img/cabeçalho.png" alt="logo" class="logo">
+                <div class="opcao">
+                    <a class="escolha" href="https://masteringruneterra.com/profile/antares/b1p84jr9wymxde8/">Viktor</a>
+                    <a class="escolha" href="https://masteringruneterra.com/profile/antares/t7zxk0tmri5hli4/">Jayce</a>
+                    <a class="escolha" href="https://masteringruneterra.com/profile/antares/rdfasghzg0g0iay/">Aphelios</a>
+                    <a class="escolha" href="https://masteringruneterra.com/profile/antares/2eprjuvkunwebcp/">Norra</a>
+                </div>
+            </div>
+        </header>
+        <div>
+            <div id="ap1" class="personagem selecionado">
+                <h1 class="titulo">Heimer Decks</h1>
+                <div class="imagem-container">
+                    <img class="imagens efeito" src="css/img/heimer.jpg" alt="Heimerdinger">
+                    <p class="letras">This page demonstrates my front-end skills. It features decks of my favorite champion from Legends of Runeterra, Heimerdinger. By clicking the links above, you’ll be redirected to a famous deck-building site (Mastering Runeterra) where you can view these decks. All lists include Heimerdinger and an alternating allied champion.
+                    </p>
+                </div>
+            </div>
+            <div id="tm" class="personagem">
+                <h1 class="titulo">Madness Minds</h1>
+                <div class="imagem-container">
+                    <img class="imagens efeito" src="css/img/viktor.jpg" alt="Viktor">
+                    <p class="letras">This list features Viktor as an ally. The deck focuses on maximizing the effects of keywords. Heimerdinger provides robots with unique abilities, each with a different keyword, while Viktor gains random ones. To finish the game, use high-impact spells like "Glorious Evolution," "Give It All," or "Purrsuit of Perfection."
+                    </p>
+                </div>
+            </div>
+            <div id="az" class="personagem">
+                <h1 class="titulo">Master Minds</h1>
+                <div class="imagem-container">
+                    <img class="imagens efeito" src="css/img/Jayce.jpg" alt="Jayce">
+                    <p class="letras">This deck pairs Heimerdinger with Jayce. The main strategy is to build a strong board using robots and casting 6+ cost spells to level up Jayce. At level 2, Jayce grants "Quick Attack" to all allies. Heimerdinger’s 6-cost robot has "Elusive," making it harder for opponents to counter.
+                    </p>
+                </div>
+            </div>
+            <div id="ap" class="personagem">
+                <h1 class="titulo">Celestial Tech</h1>
+                <div class="imagem-container">
+                    <img class="imagens efeito" src="css/img/aphelios-pulsefire.webp" alt="Aphelios">
+                    <p class="letras">In this deck, Aphelios provides lunar weapons for additional benefits, while Heimerdinger generates 2-cost tech robots. The key card here is "The Veiled Temple," which recharges mana and turns Aphelios into a late-game finisher.
+                    </p>
+                </div>
+            </div>
+            <div id="ez" class="personagem">
+                <h1 class="titulo">Yordles</h1>
+                <div class="imagem-container">
+                    <img class="imagens efeito" src="css/img/yordle.png" alt="heimer">
+                    <p class="letras">This deck features Norra, an exclusive champion from Legends of Runeterra. The strategy revolves around portals that summon random units. Unlike other Heimer decks focused on keywords, this one sacrifices quality for quantity, creating a swarm of units to overwhelm opponents. Key finisher: "Sneezy Biggledust!"
+                    </p>
+                </div>
+            </div>
+            <div class="caixa">
+                <button  onclick="selecionado()" class="botao">
+                    <img src="css/img/icon-heimer.webp" alt="slides" id="slide1">
+                </button>
+                <button onclick="selecionado()" class="botao">
+                    <img src="css/img/sticker_13.gif" alt="slides" id="slide2">
+                </button>
+                <button onclick="selecionado()" class="botao">
+                    <img src="css/img/emote-jayce-16x9.gif" alt="slides" id="slide3">
+                </button>
+                <button onclick="selecionado()" class="botao">
+                    <img src="css/img/new-aphelios-esport-emote.webp" alt="slides" id="slide4">
+                </button>
+                <button onclick="selecionado()" class="botao">
+                    <img src="css/img/sticker_15.gif" alt="slides" id="slide5">
+                </button>
+            </div>
+        <footer class="rodape"> All rights reserved<br>
+            Images from League of Legends, property of Riot Games
+        </footer>
+    </div>
+    <script src="js/java.js"></script>
+</body>
+</html>

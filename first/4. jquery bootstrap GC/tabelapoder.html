@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>Personagens</title>
+    <style>
+      body {
+      background-image: url('css/imagens/gc1.jpg'); 
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      background-attachment: fixed;
+      color: white; 
+    }
+
+    h2{
+      font-family: 'Times New Roman';
+      background-color: rgb(139, 71, 139, 0.5);
+    }
+
+    footer {
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+  }
+  h1{
+    font-family: 'Times New Roman';
+    background-color: rgb(139, 71, 139, 0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .linha{
+    background-color: white;
+    text-shadow: none;
+  }
+
+  p{
+    font-family: 'Times New Roman';
+    background-color:rgb(139, 71, 139, 0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  }
+  .bg-gradient {
+    background: linear-gradient(to right, rgb(139, 71, 139), purple);
+    color: white;
+  }
+
+  </style>
+</head>
+<body class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <img src="css/imagens/chibiduel.png" width="100px" alt="icon">
+      <a class="navbar-brand text-primary" href="#"><strong>Grand Chase Classic</strong></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="personagens.html">Personagens</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Historia.html">História</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="tabelapoder.html">Tabela de Poder</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="mascotes.html">Mascotes</a>
+        </li>
+      </ul>
+
+      <div class="d-flex">
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Fale conosco</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+        <input type="text" placeholder="Nome" class="form-control mt-2">
+
+        <input type="email" placeholder="E-mail" class="form-control mt-2">
+
+        <input type="text" placeholder="Assunto" class="form-control mt-2">
+
+        <textarea placeholder="Digite sua mensagem" class="form-control mt-2"></textarea>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" id="botao" class="btn btn-primary">Enviar</button>
+    <p id="mensagem" class="mt-2 text-primary linha"></p>
+  </div>
+</div>
+</div>
+</div>
+
+
+<header class="container-fluid my-3">
+    <div class="row">
+        <div class="col-lg pt-5" style="padding-top:150px !important">
+            <h1 class="text-md-start mt-3">Tabela do Poder dos Personagens</h1>
+            <p class="text-start text-md-start mt-3">
+              No Grand Chase, os termos AP, MP e AMP referem-se a sistemas de energia e habilidades dos personagens. Aqui está uma explicação específica para o jogo:<br><br>
+
+              MP (Mana Points):<br>
+              É o sistema clássico de habilidades no Grand Chase. O personagem acumula mana ao atacar ou receber dano e pode usá-la para ativar habilidades especiais, que consomem barras de MP (1, 2 ou 3 barras).
+              Exemplo: Arme é um personagem que usa o sistema MP e pode lançar magias poderosas gastando mana.<br><br>
+
+              AP (Action Points):<br>
+              Introduzido como uma alternativa ao MP, o sistema AP não usa barras de mana. Em vez disso, ele se recarrega com o tempo ou por ataques básicos, permitindo o uso de habilidades mais livremente, sem depender de barras específicas. É comum em personagens mais modernos ou reformulados.
+              Exemplo: Jin no sistema AP pode usar habilidades de forma contínua, desde que tenha AP suficiente.<br><br>
+
+              AMP (Auto Mana Points):<br>
+              É uma variação do sistema MP, onde o mana se regenera automaticamente com o tempo, sem precisar atacar ou ser atacado. Esse sistema foi implementado em certos personagens para dar mais autonomia no uso de habilidades.<br><br>
+              Além disso, sempre que o ataque for baixo a defesa e ou a vida sempre serão altos. Visto isso, veja a tabela a seguir:
+            </p>
+          </div>
+        </div>
+    </div>
+
+              <table class="table table-striped table-hover table-success">
+                  <thead>
+                        <tr>
+                          <th>Personagens</th>
+                          <th>Mana</th>
+                          <th>Distância do Ataque</th>
+                          <th>Numero de Classes</th>
+                          <th>Dano</th>
+                        </tr>
+                  </thead>
+                      <tbody>
+                            <tr>
+                              <td>Elisis</td>
+                              <td>MP</td>
+                              <td>Curta</td>
+                              <td>4</td>
+                              <td>Baixo</td>
+                            </tr>
+                            <tr>
+                              <td>Lire</td>
+                              <td>MP</td>
+                              <td>Longa</td>
+                              <td>4</td>
+                              <td>Neutro</td>
+                            </tr>
+                            <tr>
+                              <td>Arme</td>
+                              <td>MP</td>
+                              <td>Longa</td>
+                              <td>4</td>
+                              <td>Alto</td>
+                            </tr>
+                            <tr>
+                              <td>Lass</td>
+                              <td>MP</td>
+                              <td>Média/Longa</td>
+                              <td>4</td>
+                              <td>Alto</td>
+                            </tr>
+                            <tr>
+                              <td>Ryan</td>
+                              <td>MP</td>
+                              <td>Curta</td>
+                              <td>4</td>
+                              <td>Neutro</td>
+                            </tr>
+                            <tr>
+                              <td>Ronan</td>
+                              <td>MP</td>
+                              <td>Média</td>
+                              <td>4</td>
+                              <td>Alto</td>
+                            </tr>
+                            <tr>
+                              <td>Amy</td>
+                              <td>MP</td>
+                              <td>Curta</td>
+                              <td>4</td>
+                              <td>Neutro</td>
+                            </tr>
+                            <tr>
+                              <td>Jin</td>
+                              <td>MP</td>
+                              <td>Curta/Longa</td>
+                              <td>4</td>
+                              <td>Alto</td>
+                            </tr>
+                            <tr>
+                              <td>Sieghart</td>
+                              <td>MP</td>
+                              <td>Média</td>
+                              <td>4</td>
+                              <td>Alto</td>
+                            </tr>
+                            <tr>
+                              <td>Mari</td>
+                              <td>MP</td>
+                              <td>Média/Longa</td>
+                              <td>4</td>
+                              <td>Alto</td>
+                            </tr>
+                            <tr>
+                              <td>Dio</td>
+                              <td>AP</td>
+                              <td>Média</td>
+                              <td>4</td>
+                              <td>Baixo</td>
+                            </tr>
+                            <tr>
+                              <td>Zero</td>
+                              <td>AP</td>
+                              <td>Curta/Média</td>
+                              <td>4</td>
+                              <td>Baixo</td>
+                            </tr>
+                            <tr>
+                              <td>Rey</td>
+                              <td>AP</td>
+                              <td>Média/Longa</td>
+                              <td>4</td>
+                              <td>Alto</td>
+                            </tr>
+                            <tr>
+                              <td>Lupus</td>
+                              <td>AP</td>
+                              <td>Média/Longa</td>
+                              <td>4</td>
+                              <td>baixo</td>
+                            </tr>
+                            <tr>
+                              <td>Lin</td>
+                              <td>AMP</td>
+                              <td>Dark-Curta / Light-Longa</td>
+                              <td>4</td>
+                              <td>Neutro</td>
+                            </tr>
+                            <tr>
+                              <td>Azin</td>
+                              <td>AMP</td>
+                              <td>Curta</td>
+                              <td>2</td>
+                              <td>Neutro</td>
+                            </tr>
+                            <tr>
+                              <td>Holy</td>
+                              <td>AMP</td>
+                              <td>Curta</td>
+                              <td>2</td>
+                              <td>Baixo</td>
+                            </tr>
+                            <tr>
+                              <td>Edel</td>
+                              <td>AMP</td>
+                              <td>Curta/Média</td>
+                              <td>2</td>
+                              <td>Baixo</td>
+                            </tr>
+                            <tr>
+                              <td>Veigas</td>
+                              <td>AP</td>
+                              <td>Longa</td>
+                              <td>1</td>
+                              <td>Alto</td>
+                            </tr>
+                            <tr>
+                              <td>Uno</td>
+                              <td>AMP</td>
+                              <td>Média</td>
+                              <td>2</td>
+                              <td>-</td>
+                            </tr>
+                            <tr>
+                              <td>Decane</td>
+                              <td>AMP</td>
+                              <td>Curta/Média</td>
+                              <td>2</td>
+                              <td>Baixo</td>
+                            </tr>
+                            <tr>
+                              <td>AI</td>
+                              <td>AMP</td>
+                              <td>Média</td>
+                              <td>2</td>
+                              <td>Baixo</td>
+                            </tr>
+                            <tr>
+                              <td>Kallia</td>
+                              <td>AMP</td>
+                              <td>Curta</td>
+                              <td>2</td>
+                              <td>Baixo</td>
+                            </tr>
+                      </tbody>
+              </table>
+
+<footer class="mt-5 bg-light text-center text-dark p-4">
+    Imagens de © 2024 KOG. Todos os direitos reservados.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="jquery.js"></script>
+<script src="script_jquery.js"></script>
+
+  </body>
+</html>

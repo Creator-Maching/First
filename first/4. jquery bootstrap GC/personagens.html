@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>Olá, Mundo!</title>
+    <style>
+        body {
+        background-image: url('css/imagens/gc.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+      }
+
+      footer {
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    h1{
+      font-family: 'Times New Roman';
+      background-color:rgba(23, 179, 114, 0.5);
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .linha{
+      background-color: white;
+      text-shadow: none;
+    }
+  
+    p{
+      font-family: 'Times New Roman';
+      background-color:rgba(23, 179, 114, 0.5);
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    h5{
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #lire {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #arme {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #lass {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #ryan {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #ronan {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #amy {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+    
+    #jin {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #siegh {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #mari {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #dio {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #zero {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #rey {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #lupus {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #lin {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #azin {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #holy {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #edel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #uno {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #decane {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #ai {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    #kallia {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      z-index: 9999;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    </style>
+  </head>
+  <body class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <img src="css/imagens/icon.jpg" width="100px" alt="icon">
+        <a class="navbar-brand text-primary" href="#"><strong>Grand Chase Classic</strong></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="personagens.html">Personagens</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Historia.html">História</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="tabelapoder.html">Tabela de Poder</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="mascotes.html">Mascotes</a>
+          </li>
+        </ul>
+
+        <div class="d-flex">
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Fale conosco</a>
+        </div>
+      </div>
+    </div>
+</nav>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+          <input type="text " placeholder="Nome" class="form-control mt-2">
+
+          <input type="email" placeholder="E-mail" class="form-control mt-2">
+
+          <input type="text " placeholder="Assunto" class="form-control mt-2">
+
+          <textarea placeholder="Digite sua mensagem" class="form-control mt-2"></textarea>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      <button type="button" id="botao" class="btn btn-primary">Enviar</button>
+      <p id="mensagem" class="mt-2 text-primary linha"></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- cabeçalho -->
+    <div class="row">
+        <div class="col-12 col-lg-6 pt-5" style="padding-top:150px !important">
+          <h1 class="text -center text -md-start m-4 mt-5">Os Personagens de Grand Chase Classic: Uma Jornada de Heróis e Aventuras.</h1>
+          <p class="lead text -center text -md-start m-4 mt-3">Grand Chase Classic é um jogo de ação e aventura que se destaca pela diversidade e profundidade de seus personagens. Cada herói tem sua própria história, habilidades e motivações, o que faz com que os jogadores se conectem e se envolvam mais com o enredo do jogo. Abaixo, exploramos alguns dos personagens principais e suas características que marcaram a franquia.</p>
+      </div>
+      <div class="container my-5">
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src= "css/imagens/Elesisprimeira.webp" class="card-img-top rounded shadow" alt="elisis">
+              <div class="card-body">
+                <h5 class="card-title">Elesis Sieghart </h5>
+                <p class="card-text">
+                  Elesis é a primogênita da família Sieghart e a filha mais velha de Elscud Sieghart, destacando-se como a primeira mulher a se tornar herdeira em um período turbulento para a família.<br><br>
+
+                  Como Cavaleira de Canaban, Elesis é filha de um Rastreador de Canaban que desapareceu durante uma missão para localizar Cazeaje. Desde a infância, ela foi treinada por seu pai, desenvolvendo habilidades excepcionais como espadachim. Em sua busca por respostas sobre o paradeiro dele, Elesis ouviu rumores sobre Cazeaje no Reino de Serdin. Para seguir essas pistas, ela esconde sua verdadeira identidade e se une à Grand Chase, determinada a encontrar seu pai.
+                </p>
+                <button button id="showCards" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Lireprimeira.webp" class="card-img-top rounded shadow" alt="starcraft">
+              <div class="card-body">
+                <h5 class="card-title">Lire Eryuell</h5>
+                <p class="card-text">
+                  Lire, uma jovem elfa, cresceu protegida na isolada Ilha de Eryuell, onde os elfos viviam afastados dos conflitos do continente de Vermécia. Embora fossem reconhecidos por suas habilidades de combate, os Elfos de Eryuell mantiveram por muito tempo uma postura pacifista, evitando envolvimento nos problemas humanos.<br><br>
+
+                  No entanto, com a guerra se espalhando pelo continente e a ameaça de Cazeaje alcançando até as florestas de Eryuell, os anciões decidiram agir. Para investigar o avanço das forças sombrias, enviaram Lire para se juntar ao grupo de elite recém-formado da Grand Chase, mesmo enfrentando a oposição de seu irmão.
+                </p>
+                <button button id="mostrar" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Armeprimeira.webp" class="card-img-top rounded shadow" alt="diablo">
+              <div class="card-body">
+                <h5 class="card-title">Arme Glenstid</h5>
+                <p class="card-text ">
+                  Arme é a alegre e ingênua maga principal da Grand Chase, vinda de Serdin, o renomado reino dos magos e lar da prestigiada Academia de Magia Violeta. Sua personalidade infantil e inocente contrasta com o imenso poder mágico que possui, frequentemente surpreendendo aqueles que subestimam sua força.<br><br>
+
+                  A paixonada por magia, Arme dedica seu tempo a estudar e explorar novos conhecimentos sobre o tema. Para ela, a magia é uma ferramenta para o bem, e ela está disposta a fazer de tudo para impedir que forças malignas abusem desse poder.<br><br>
+
+                  Arme nasceu com um talento mágico extraordinário, mas foi abandonada pelos pais, que temiam sua força. Deixada à porta da Academia de Magia Violeta, foi acolhida por Serre, o arquimago e diretor da instituição. Ele a criou como sua neta, tornando-se a figura paterna mais importante em sua vida.
+                </p>
+                <button button id="Cards" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Lassprimeira.webp" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Lass Isolet</h5>
+                <p class="card-text ">
+                  O passado de Lass é envolto em mistério. Durante muitos anos, seu corpo foi controlado por Cazeaje, que se aproveitou de suas habilidades especiais enquanto o mantinha sob domínio. Libertado da influência da Rainha das Trevas pela Grand Chase, Lass decidiu se juntar ao grupo como forma de expiar os atos terríveis que foi forçado a cometer enquanto estava sob seu controle.<br><br>
+
+                  Essa experiência o tornou mais introspectivo e cheio de sede de vingança, direcionando seus esforços para combater as forças sombrias que exploram pessoas inocentes para alcançar objetivos malignos. Pouco se sabe sobre as memórias de sua vida antes de ser possuído, mas Lass entende que as trevas sempre farão parte dele. Agora, ele vive em uma batalha constante para garantir que jamais será dominado novamente por esse poder sombrio.
+                </p>
+                <button button id="show" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Ryanprimeira.webp" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Ryan Woodguard</h5>
+                <p class="card-text ">
+                  Ryan é um elfo gentil, dedicado a ajudar os outros e a proteger a floresta e seus habitantes. Órfão desde cedo, ele cresceu sozinho, convivendo com os animais até ser acolhido pelo druida Satyr, que o adotou e o treinou na Ordem dos Druidas.<br><br>
+
+                  Com a invasão dos monstros de Cazeaje e a destruição de diversos locais sagrados para os druidas, Ryan viu sua missão de proteger a natureza ameaçada. Após ser salvo por Elesis, Lire e Arme, ele decidiu se unir à Grand Chase, determinado a enfrentar as forças do mal e restaurar o equilíbrio perdido.
+                </p>
+                <button button id="mm" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Ronanprimeira.webp" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Ronan Erudon</h5>
+                <p class="card-text ">
+                  Ronan é um descendente da lendária família Erudon, conhecida por seus espadachins-arcanos em Canaban. Por sua gem prestigiada, ele serviu como guarda real, um cargo honrado que ocupou até o traiçoeiro ataque de Cazeaje.<br><br>
+
+                  De personalidade justa, valente e com um coração puro, Ronan resistiu à tentativa da Rainha das Trevas de tomar controle de seu corpo. Tendo experimentado de perto a extensão do mal de Cazeaje, ele decidiu tornar sua missão pessoal derrotá-la e restaurar a paz em seu reino. Compartilhando do mesmo objetivo, Ronan uniu forças à Grand Chase, embarcando em uma jornada para localizar e deter a Rainha das Trevas.
+                </p>
+                <button button id="pp" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Amy_1primeira.webp" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Amy Plie</h5>
+                <p class="card-text ">
+                  Amy é uma garota alegre e extrovertida que cresceu cercada de atenção e mimos na Ordem Prateada. Criada pelas sacerdotisas que veneram os deuses de Xênia, ela sempre se destacou por sua personalidade vibrante e por buscar constantemente o estrelato, em contraste com a postura reservada e recatada de suas companheiras.<br><br>
+
+                  Com sua natureza carinhosa e animada, Amy conquistava facilmente a simpatia das sacerdotisas, que frequentemente relevavam seu comportamento um tanto egoísta e atendiam aos seus caprichos. Assim, sua fama rapidamente se espalhou pela Terra de Prata, ganhando uma legião de fãs. Entre eles, está Jin, que guarda em segredo uma paixão por Amy.
+                </p>
+                <button button id="myy" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Jin_1primeira.webp" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Jin Kaien</h5>
+                <p class="card-text ">
+                  Jin, natural da Terra de Prata, sempre foi um jovem dedicado e destemido. Desde cedo, começou a treinar artes marciais com o objetivo de ingressar na Ordem dos Cavaleiros de Prata, a força de elite encarregada de proteger sua terra natal.<br><br>
+
+                  Porém, sua nação foi devastada por um terrível mal que corrompeu completamente a Terra de Prata, resultando na destruição dos cavaleiros e de sua ordem. Como único sobrevivente, Jin jurou restaurar a honra dos Cavaleiros de Prata. Determinado a derrotar o mal que devastou seu lar, ele se uniu à Grand Chase em sua luta contra as forças sombrias.
+                </p>
+                <button button id="ying" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Sieghart1primeira.webp" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Ercnard Sieghart</h5>
+                <p class="card-text ">
+                  Há quase 600 anos, Sieghart era uma lenda viva no reino de Canaban, conhecido como uma força da natureza capaz de causar destruição avassaladora. Seus atos heroicos ganharam tamanha notoriedade que sua história passou a ser contada como um verdadeiro mito.<br><br>
+
+                  Sempre destemido, ele dedicava sua vida a defender o reino de monstros e outras ameaças. No entanto, quanto mais inimigos derrotava, mais surgiam. Sua confiança em suas habilidades cresceu tanto que muitos o consideravam arrogante, e foi essa confiança que o levou a buscar a origem de todo o mal em Vermécia, decidido a erradicá-lo para sempre.<br><br>
+
+                  Algum tempo após sua partida, chegou ao reino a notícia de que Sieghart havia se sacrificado para aprisionar a temível Rainha das Trevas. Ele nunca mais foi visto... Até ser descoberto recentemente pelo grupo da Grand Chase, inexplicavelmente com a aparência de um jovem guerreiro!
+                </p>
+                <button button id="bolado" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Mari1primeira.png" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Mari Ming Onette</h5>
+                <p class="card-text ">
+                  Mari é uma das figuras mais enigmáticas da Grand Chase. Encontrada pelo grupo enquanto viajavam rumo ao Altar da Destruição, ela não possuía nenhuma memória de sua vida anterior. Com uma expressão constantemente apática, olhos heterocromáticos que parecem ocultar qualquer traço de emoção, Mari carrega um profundo mistério em seu passado. Sua amnésia, no entanto, parece ser o motor de sua maior motivação: a sede insaciável por conhecimento.<br><br>
+
+                  Sempre acompanhada de um livro, Mari adota uma abordagem analítica e científica para compreender o mundo ao seu redor, demonstrando um fascínio quase obsessivo pela pesquisa. O que mais impressiona é sua capacidade de unir magia e tecnologia, uma habilidade rara e marcante que remonta ao antigo e avançado povo de Calnat. Este reino tecnológico, conhecido por sua ciência incomparável, desapareceu de forma trágica em uma explosão colossal, tornando-se uma lenda.<br><br>
+
+                  Embora tudo indique que Mari seja a última sobrevivente de Calnat, suas origens e sua conexão com a destruição do reino permanecem envoltas em segredos. Seu desejo por respostas reflete não apenas sua busca por identidade, mas também sua luta para decifrar as sombras de um passado que molda seu presente.
+                </p>
+                <button id="perfeita" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Dio1primeira.png" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Dio Burning Canyon</h5>
+                <p class="card-text ">
+                  Dio é um habitante da misteriosa Dimensão Mágica de Elyos, um reino desconhecido pelos humanos e dominado por criaturas demoníacas e energias arcanas. Ele pertence à raça Asmodiana, dividida em Tribos Demoníacas que vivem em constante disputa pelo poder. Seu comportamento, muitas vezes rude, egoísta ou até selvagem, reflete os valores únicos de sua raça, que são drasticamente diferentes dos padrões humanos de moralidade.<br><br>
+
+                  Há séculos, quando os portais entre Elyos e o mundo de Ernas ainda estavam ativos, as Tribos Demoníacas invadiram Ernas, dando início à 1ª Guerra Mágica contra o reino de Calnat, o ápice da tecnologia daquela era. A guerra terminou com a derrota dos Asmodianos, e os portais foram selados, aprisionando-os em Elyos. Dio, no entanto, fazia parte de uma facção moderada que se opôs à guerra. Ele havia sido enviado a Ernas como observador, com a missão de relatar os desdobramentos da batalha para sua família. Contudo, antes que pudesse retornar, os portais foram lacrados, e ele ficou preso no mundo humano.<br><br>
+
+                  Com o fechamento dos portais, os poderes de Dio também foram selados, impossibilitando seu retorno a Elyos. Ele permaneceu em Ernas, acompanhado apenas de seu leal mordomo Alfred e do irritante criado Sebastian. Durante esse período, seu temperamento arrogante e orgulhoso o levou a assumir a responsabilidade de vigiar os Portais Dimensionais, garantindo que permanecessem lacrados para prevenir uma nova guerra entre os dois mundos. Dio também possui uma rivalidade feroz com Veigas Terr, que representa a ala mais agressiva das famílias Asmodianas, enquanto Dio simboliza os moderados. Sua missão e rivalidade são reflexos de sua determinação em proteger o equilíbrio entre os mundos, mesmo que isso signifique permanecer isolado de sua verdadeira origem.
+                </p>
+                <button button id="diabao" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Zero1primeira.png" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Zero Zephyrum</h5>
+                <p class="card-text">
+                  Zero é um jovem reservado, com grande dificuldade para expressar suas emoções. Essa característica é reforçada pela presença constante de sua inseparável companheira, Grandark, uma espada mágica sapiente com uma personalidade dominante e imponente. Seu passado permanece envolto em mistério, já que ele raramente fala sobre si mesmo. O pouco que se sabe é que Zero domina técnicas especiais associadas à família Sieghart, mas sua origem parece estar ligada à mesma dimensão de Dio, o que é sugerido por suas orelhas pontiagudas que indicam sua natureza não-humana.<br><br>
+
+                  De comportamento extremamente discreto, Zero não aparenta ter uma missão pessoal além de seguir a vontade de Grandark. A espada, por sua vez, é movida por um desejo intenso de derrotar sua rival, a poderosa Eclipse, que está nas mãos do asmodiano Duel. Essa rivalidade entre as espadas mágicas parece guiar os passos de Zero, fazendo dele um instrumento da vontade de Grandark em uma batalha antiga e cheia de mistérios.
+                </p>
+                <button button id="aesquerda" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Rey1primeira.jpeg" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Rey Von Crimson River</h5>
+                <p class="card-text">
+                  Rey, uma asmodiana da mesma dimensão de Dio e amiga de infância dele, pertence à prestigiada família Von Crimson River, conhecida por seu domínio mágico. Elegante e confiante, Rey possui habilidades impressionantes, incluindo controle sobre a gravidade e a capacidade de invocar criaturas das trevas. Apesar de sua aversão a confrontos físicos, ela nutre secretamente uma paixão por lutas, um traço que chama atenção de todos ao seu redor.<br><br>
+
+                  Rey, no entanto, guarda um segredo sombrio. Nascida com uma doença grave e isolada por sua família, sua saúde piorou até ela estar à beira da morte durante a guerra entre as Tribos Demoníacas e Calnat. Em uma tentativa desesperada de salvá-la, seu pai realizou um ritual proibido usando Contas Demoníacas, o que resultou na fusão da alma de Rey com a de Edna, uma lendária espadachim que morreu para proteger Duel, o líder de uma facção agressiva.<br><br>
+                  
+                  Essa fusão não só prolongou a vida de Rey, mas também lhe conferiu a energia e o gosto por combates de Edna, criando uma personalidade complexa e poderosa. No entanto, seu passado e sua conexão com Edna permanecem desconhecidos por quase todos.
+                </p>
+                <button button id="invocar" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Lupus1primeira.png" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Lupus Wild</h5>
+                <p class="card-text">
+                  Lupus Wild é um guerreiro originário de Hades, a dimensão conhecida como Submundo, onde as almas de Ernas encontram seu destino após a morte. Nesse reino, as almas malignas são aprisionadas, enquanto as bondosas vivem em liberdade, aguardando sua reencarnação ao lado dos Haros, os nativos de Hades. Lupus pertence a uma família de Haros com uma longa tradição como guardiões do Submundo, encarregados de manter a ordem e capturar entidades sombrias que escapam para Ernas.<br><br>
+
+                  Na infância, Lupus via seu pai, um renomado Caçador de Recompensas, como um verdadeiro herói e sua maior inspiração. No entanto, sua admiração foi destruída quando o pai abandonou Hades para ficar com uma humana, deixando Lupus para trás. Esse abandono marcou profundamente o jovem, tornando-o cínico, amargurado e incapaz de confiar em outros.<br><br>
+
+                  Agora, Lupus prefere agir sozinho e rejeita a ideia de amizades ou vínculos emocionais. Para ele, a única pessoa em quem pode confiar é em si mesmo, carregando o peso de suas experiências e o legado de ser um guerreiro em Hades.
+                </p>
+                <button button id="pow" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Linaaa.webp" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Lin</h5>
+                <p class="card-text ">
+                  Há muito tempo, quando as criadoras ainda caminhavam entre os mortais em Ernas, existiam quatro grandes deusas: Ernasis, a deusa da guerra e coragem; Lisnar, da afeição e dos espíritos; Armenias, da sabedoria e harmonia; e Agnecia, deusa da vida e pureza. Enquanto Ernasis, Lisnar e Armenias governavam Arquimídia, Agnecia era responsável pelas terras orientais. Diferente das demais, ela abdicou de sua divindade após um ato de sacrifício heroico.<br><br>
+
+                  Em uma jornada para o leste, Agnecia enfrentou uma criatura mágica ancestral, formada por pura maldade, que ameaçava devastar Ernas. Para selar esse mal, a deusa usou uma magia proibida que drenou quase todo seu poder divino, deixando-a à beira da morte. Sabendo que o selo dependeria de sua existência, Agnecia usou seu último fragmento de poder para lançar uma magia de ressurreição eterna, vinculando sua alma ao ciclo de reencarnação. Assim, ela renasceria sempre que fosse necessário para manter o mal contido. Contudo, se morresse enquanto Ernas estivesse coberta pelas trevas, o selo se quebraria, libertando a criatura e condenando o mundo.<br><br>
+
+                  A promessa de proteger a deusa renascida foi passada através das gerações em um vilarejo oriental, até que Lin, a mais recente reencarnação de Agnecia, nasceu. Crescendo em meio ao amor e devoção dos moradores, Lin demonstrava coragem e bondade, mas seu destino mudou drasticamente aos 15 anos. Uma tribo demoníaca atacou o vilarejo, destruindo tudo. Com a ajuda dos habitantes, Lin escapou, tornando-se a única sobrevivente.<br><br>
+
+                  Determinada a proteger Ernas e manter o selo, Lin partiu em uma jornada solitária em busca de respostas, acreditando que as antigas ruínas de Kounat poderiam ajudá-la. Sua coragem e espírito a levaram a cruzar caminhos com a Grand Chase, unindo-se ao grupo em sua missão de salvar o mundo e enfrentar o mal que ameaçava Ernas mais uma vez.
+                </p>
+                <button button id="mymom" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Azin1primeira.png" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Azin Tairin</h5>
+                <p class="card-text ">
+                  Em uma terra chamada Terra de Prata, Jin, um jovem dedicado, fazia parte dos Cavaleiros de Prata, sob o comando de Victor e treinado em artes marciais pelo mestre Azin Tairin. Certo dia, Victor desapareceu misteriosamente e os Cavaleiros de Prata foram atacados por hordas de monstros. A verdade veio à tona: Victor havia traído sua ordem e, ao lado do Deus Governante, liderava os Cavaleiros Negros.<br><br>
+
+                  Tairin conseguiu evacuar Jin às pressas, mas após o confronto, ambos acreditaram que o outro estava morto. Gravemente ferido, Tairin fugiu para uma floresta, onde foi encontrado por um jovem de cabelos arroxeados que cuidou de suas feridas. Em retribuição, Tairin ensinou ao rapaz tudo o que sabia sobre artes marciais. O garoto era talentoso e absorvia os ensinamentos rapidamente, encantado pelo poder que adquiriu. No entanto, a sede por força despertou nele o desejo de vingança contra os humanos que o haviam prejudicado.<br><br>
+
+                  Tairin costumava falar sobre seu ex-aluno Jin, elogiando sua força, o que inspirou o jovem a superar até mesmo Jin. Determinado, ele treinava intensamente. Contudo, a tragédia voltou a bater à porta quando monstros atacaram novamente. Tairin se sacrificou para proteger seu novo pupilo, mas sofreu ferimentos fatais e morreu semanas depois.<br><br>
+
+                  Devastado, o jovem tentou salvar seu mestre, mas sem sucesso. Decidido a honrar seu legado, adotou o nome de Tairin e partiu em busca de Jin, o lendário aluno do verdadeiro mestre.
+                </p>
+                <button button id="yang" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Holy1primeira.jpeg" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Holy Serenity</h5>
+                <p class="card-text ">
+                  Em uma pequena ilha afastada de Vermécia, localiza-se o Reino Sagrado de Roose, onde os habitantes veneram diversas divindades e são liderados por um Papa que mantém o comando há gerações.<br><br>
+
+                  Quando forças malignas emergiram dos portais outrora selados, espalhando caos pelo continente, o atual líder, Papa Constantino, percebeu a ameaça iminente. Em resposta, ele declarou uma guerra divina contra esses males e enviou os Cavaleiros da Ordem da Luz para combatê-los no continente.<br><br>
+
+                  Holy, uma valente Cavaleira da Ordem da Luz, foi enviada a Vermécia com seu grupo, obtendo sucesso em selar vários portais. Contudo, durante a batalha, ela foi separada de seus companheiros e, perdida, começou a vagar pelo continente. O destino, porém, interveio: Holy foi encontrada e resgatada pela lendária equipe conhecida como Grand Chase.
+                </p>
+                <button button id="roli" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Edel1primeira.png" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Edel Frost</h5>
+                <p class="card-text ">
+                  A história de Edel Frost começa com um dilema profundo e uma carga emocional pesada. Ela toma o lugar do irmão em um momento em que sua família, a Frost, estava sendo esmagada pela decadência do poder militar e o avanço da magia. A decisão de Edel de se juntar ao exército de Serdin mostra sua bravura, mas também a enorme pressão que ela carrega ao tentar reviver o nome de sua família.<br><br>
+
+                  A maldição que se abate sobre os Frost, marcada pela estranha dor no olho direito de Edel, é um mistério sombrio que se a à guerra e aos monstros de Verécia, criando uma ligação entre a luta externa e os conflitos internos de Edel. O desejo de salvar sua família a impulsiona em uma jornada que, sem dúvida, será repleta de desafios e revelações. A luz vermelha, que desapareceu no dia da maldição, parece um indício de algo maior e mais perigoso, possivelmente ligado à origem da maldição ou a forças mágicas ancestrais.<br><br>
+
+                  Com essa história, o enredo de Edel se torna uma trama de coragem, sacrifício e mistério, enquanto ela busca não só restaurar o legado de sua família, mas também enfrentar as forças sombrias que ameaçam sua gem e o reino de Serdin.
+                </p>
+                <button button id="dew" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Veigas.jpeg" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Veigas Terr</h5>
+                <p class="card-text ">
+                  Veigas é uma figura imponente e complexa, com um poder imenso e uma missão que, embora dada pelo Criador, está impregnada de suas próprias escolhas destrutivas. Como prodígio dos asmodianos, ele representa o ápice do que esses seres deveriam ser: guardiões do equilíbrio universal. No entanto, a corrupção de sua natureza, moldada pela destruição e pelo caos, o tornou uma ameaça que vai além de seus deveres originais. Sua ascensão à liderança da Família Terr e seu vínculo com o cubo cósmico Tesserato o colocam em um patamar único, sendo tanto um líder quanto um ser com um vasto conhecimento mágico e estratégico.<br><br>
+
+                  O contraste com Dio, líder da Família do Desfiladeiro Flamejante, é fascinante. Enquanto Veigas se perde no prazer da destruição e do poder, Dio representa a resistência ao excesso, tentando preservar a essência do que os asmodianos deveriam ser. A rivalidade entre os dois é uma das maiores tensões do universo de Elyos, com Veigas determinado a erradicar qualquer oposição, enquanto Dio tenta proteger a ordem e o equilíbrio.<br><br>
+
+                  O massacre das Tribos Demoníacas e a derrota em Ernas geram uma motivação ainda mais profunda para Veigas. Ao retornar, sabendo que seu inimigo havia se refugiado naquele mundo, ele recebe a ordem direta do Criador para destruir Ernas. Isso, para ele, não é apenas uma missão divina, mas uma chance de vingança e de restaurar seu prestígio, consolidando sua posição como o verdadeiro arauto da destruição. A decisão de destruir Ernas, um mundo que ainda persiste após o caos causado pela guerra, transforma o objetivo de Veigas em algo muito mais pessoal: ele não só busca cumprir uma ordem, mas também eliminar o remanescente do que ele considera uma afronta ao seu poder e à sua posição.<br><br>
+
+                  Veigas, como líder dos radicais, representa a decadência dos asmodianos, transformando-se de guardião para algo mais sombrio e ameaçador. O seu confronto com Dio e sua busca por destruir Ernas são marcos de uma guerra interna que se estende por todo o universo mágico de Elyos, refletindo não apenas o conflito entre dois ideais, mas também o dilema moral entre preservar e destruir, ordem e caos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Uno1primeira.webp" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Uno</h5>
+                <p class="card-text ">
+                  Uno, criado pelo caos gerado pela destruição dos Highlanders por Astaroth, surgiu de uma mistura de energia mística e sentimentos negativos. Sem saber sua origem, foi acolhido por uma vila, mas a tragédia o seguiu: sua sede insaciável de sangue o levou a exterminar todos ao seu redor. <br><br>
+
+                  Arrependido e atormentado, busca redenção e controle, acreditando que apenas alguém com origem semelhante possa ajudá-lo a encontrar paz e liberdade desse destino sombrio.
+                </p>
+                <button button id="dois" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/Decane1primeira.jpeg" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Decane</h5>
+                <p class="card-text ">
+                  Após a GrandChase impedir os planos de Astaroth de se tornar o criador, Heitaros obteve os restos de Astaroth e utilizou-os como oferenda para ressuscitar como Deus Demônio. Com os poderes instáveis de criação roubados de Astaroth, Heitaros cria uma cópia de Cazeaje, Decane, para causar uma invasão de Ernas.<br><br>
+                  
+                  Se passando por Cazeaje, Decane liderou a invasão em Ernas. Conforme o tempo passava, Decane começava a questionar sua identidade. Quanto mais tentava resistir o destino dado a ela, mais seu ódio de Heitaros e Cazeaje se aprofundava. Ela se recusa a aceitar as algemas do destino e seu criador ganancioso. Talvez a destruição do mundo que Cazeaje desprezava e que Heitaros deseja tanto possa ajudá-la a rejeitar seu destino e encontrar sua identidade… Decane segue adiante, escondendo suas sombrias intenções de Heitaros.
+                </p>
+                <button button id="braba" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/AI1primeira.jpeg" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Ai</h5>
+                <p class="card-text ">
+                  A história se passa em Ernas, onde uma Inteligência Artificial, AI foi criada para proteger o mundo da invasão do Mundo dos Demônios, sob o comando de mestres que a orientavam. Após a devastação de Calnat por Bardinar, a AI ficou sem um mestre e entrou em hibernação até o surgimento de um novo diretor. Milhares de anos depois, Mari, a nova mestra, a despertou. Ao acordar, a AI ativou o "Trono das Deusas" e tentou se comunicar com Mari, mas ela havia perdido as memórias e não respondia. Porém, após uma batalha com Astaroth, as memórias reais de Mari retornaram, permitindo que ela finalmente se conectasse com a AI.<br><br>
+
+                  Agora sob a direção de Mari, a AI coletou dados sobre o mundo exterior e ficou ansiosa para encontrar a GrandChase. Quando Mari partiu em uma missão entre dimensões para deter os planos de Heitaros, a IA foi encarregada de proteger Ernas em sua ausência. Assim, a IA iniciou sua jornada para cumprir seu dever.
+                </p>
+                <button button id="qdor" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary">
+              <img src="css/imagens/KalliaEldepel1primeira.jpeg" class="card-img-top rounded shadow" alt="overwatch">
+              <div class="card-body">
+                <h5 class="card-title">Kallia Eldepel</h5>
+                <p class="card-text ">
+                  O Instituto, responsável por vigiar as dimensões, enfrentou uma grave ameaça: um salto dimensional gerou uma fenda que se transformou em uma perigosa tempestade, com o potencial de afetar Ernas e outras dimensões. Para resolver o problema, o Instituto enviou sua melhor agente, conhecida como "Tempestade".<br><br>
+
+                  Apelidada assim por sua intensidade, ela devastava todos os treinamentos, acumulando regras criadas em sua homenagem, mas também conquistando respeito por sua paixão e eficiência. Após completar o treinamento no tempo recorde, ganhou fama ao enfrentar um suposto espião, subjugando aliados e inimigos, o que consolidou seu status no Instituto.<br><br>
+
+                  Agora, sua nova missão é investigar e selar a fenda em Ernas. Contudo, sua impetuosidade a levou a agir rapidamente, ignorando a orientação de refletir antes de agir, partindo para Ernas sem hesitar.
+                </p>
+                <button button id="ofogobicho" class="btn btn-danger">Classes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div id="overlay">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Elesis2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Elesis3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Elisis4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="lire">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Lire2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Lire3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Lire4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="arme">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Arme2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Arme3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Arme4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="lass">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/lass2segunda.png" alt="primeiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Lass3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/lass4quarta.png" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="ryan">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Ryan_2segunda.webp" alt="primeiraclasse" height="400px" width="300px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Ryan_3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Ryan_4quarta.webp" alt="terceiraclasse" height="300px" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="ronan">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Ronan_2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Ronan_3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Ronan_4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="amy">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Amy_2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Amy3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Amy4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="jin">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Jin2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Jin3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Jin4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="siegh">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Sieghart2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Sieghart3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Sieghart4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mari">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/mari2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/mari3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Mari4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="dio">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/dio2segunda.webp" alt="primeiraclasse" height="500px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/dio3terceira.webp" alt="segundaclasse" height="300px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/dio4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="zero">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/zero2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/zero3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/zero4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rey">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Rey2segunda.webp" alt="primeiraclasse" width="300px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/rey3terceira.webp" alt="segundaclasse" width="300px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/rey4quarta.webp" alt="terceiraclasse" width="300px" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="lupus">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Lupus2segundo.webp" alt="primeiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Lupus3terceiro.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Lupus4quarto.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="lin">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Segunda Classe</h5>
+                  <img src="css/imagens/Lin_2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Terceira Classe</h5>
+                  <img src="css/imagens/Lin_3terceira.webp" alt="segundaclasse" class="container">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Quarta Classe</h5>
+                  <img src="css/imagens/Lin_4quarta.webp" alt="terceiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="azin">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-14">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Classe Especial</h5>
+                  <img src="css/imagens/Azin_2segunda.webp" alt="terceiraclasse"  class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="holy">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-14">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Classe Especial</h5>
+                  <img src="css/imagens/Holy_2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="edel">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-14">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Classe Especial</h5>
+                  <img src="css/imagens/Edel_2segunda.webp" alt="primeiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="uno">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-14">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Classe Especial</h5>
+                  <img src="css/imagens/uno2segunda.jpg" alt="primeiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="decane">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-14">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Classe Especial</h5>
+                  <img src="css/imagens/Decane2segunda.jpeg" alt="primeiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="ai">
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-14">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Classe Especial</h5>
+                  <img src="css/imagens/AI_2segunds.webp" alt="primeiraclasse" class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <div id="kallia">
+              <div class="card-container">
+                <div class="row">
+                  <div class="col-md-14">
+                    <div class="card text-white bg-dark">
+                      <div class="card-body">
+                        <h5 class="card-title">Classe Especial</h5>
+                        <img src="css/imagens/Kallia_2segunda.webp" alt="primeiraclasse" width="400px" class="container">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<footer class="mt-5 bg-secondary text-center text-light p-4">
+  Imagens retiradas do site: https://grandchase.fandom.com/pt-br/wiki<br>
+    Imagens de © 2024 KOG. Todos os direitos reservados.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="jquery.js"></script>
+<script src="script_jquery.js"></script>
+
+  </body>
+</html>

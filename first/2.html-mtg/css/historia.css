@@ -1,0 +1,141 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image:url("https://th.bing.com/th/id/R.d6da601ec6dc91bf93ddf14af699ab91?rik=T3dNnJaswNNQyA&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    width: 75px;
+    float: left;
+    border-radius: 20%;
+}
+
+.cabecalho {
+    background-color: white;
+    float: right;
+    margin: 30px;
+    padding: 45px;
+    border-radius: 50%;
+}
+
+.cabecalho a {
+    background-color: blueviolet;
+    color: yellow;
+    margin: 50px;
+    padding: 40px;
+    text-decoration: none;
+    border-radius: 30%;
+}
+
+.cabecalho a:hover {
+    background-color: blue;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    height: 30px;
+    margin-top: 300px;
+    margin-bottom: 200px;
+    text-shadow: 2px 2px 3px gray;
+}
+
+/* História */
+.container p {
+    text-align: center;
+    margin-left: 100px;
+    width: 600px;
+    height: auto;
+    text-shadow: 2px 2px 3px black;
+}
+
+.container h1 {
+    color: white;
+    height: auto;
+    text-shadow: 2px 2px 3px black;
+}
+
+#conteudo{
+    clear:both;
+    color: white;
+    background-size: 100%;
+    min-height: 400px;
+    text-align:center;
+    padding: 80px, 80px, 0, 0;
+}
+
+.efeito {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 280px;
+}
+
+.richard, .game, .regras, .formatos {
+    border-radius: 40%;
+    width: 350px;
+}
+
+.richard {
+    float: left;
+    padding-right: 100px;
+}
+
+.game {
+    float: right;
+    padding-right: 150px;
+    height: 200px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 100px;
+}
+
+.richard:hover, .game:hover, .regras:hover, .formatos:hover {
+    opacity: 0.5;
+}
+
+.regras {
+    float: left;
+    padding-right: 100px;
+}
+
+.centro {
+    float: left;
+    padding-right: 100px;
+    width: 350px;
+}
+
+.segundo {
+    display: flex;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+    margin-left: 200px;
+}
+
+ h3{
+    margin-right: 200px;
+}
+
+

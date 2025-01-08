@@ -1,0 +1,151 @@
+/**/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 2000px;
+}
+
+header{
+    max-height: 100px;
+    padding: 30px;
+}
+
+.logo img{
+    width: 75px;
+    float: left;
+    border-radius: 20%;
+}
+
+.cabeçalho{
+    background-color: white;
+    float: right;
+    margin: 30px;
+    padding: 45px;
+    border-radius: 50%;
+}
+
+.cabeçalho a{
+    background-color: blueviolet;
+    color: yellow;
+    margin: 50px;
+    padding: 40px;
+    text-decoration: none;
+    border-radius: 30%;
+}
+
+.cabeçalho a:hover {
+    background-color: blue;
+}
+
+body{
+    background-image:url("https://th.bing.com/th/id/OIP.JHhCpxbemQ8ZxqmKuJi7qgHaFa?rs=1&pid=ImgDetMain");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    height: 30px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 3px black;
+}
+.container p{
+    text-align: center;
+    margin-left: 300px;
+    width: 600px;
+    height: auto;
+}
+
+.container h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+.container{
+    margin: 0 40px 0 40px;
+    color:white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.efeito{
+    margin: 0 40px 0 40px;
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.richard{
+    border-radius: 40%;
+    float: left;
+    padding-right: 100px;
+    width: 350px;
+}
+.game{
+    border-radius: 40%;
+    float: right;
+    width: 350px;
+    padding-left: 100px;
+    height: 200px;
+}
+
+.icons{
+    display: flex;
+    margin-top: 100px;
+}
+
+.richard:hover{
+    opacity: 50%;
+}
+
+.game:hover{
+    opacity: 50%;
+}
+
+.regras{
+    border-radius: 40%;
+    float: left;
+    padding-right: 100px;
+    width: 350px;
+}
+
+.regras:hover{
+    opacity: 50%;
+}
+
+.segundo{
+    display: flex;
+    margin-top: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: yellow;
+    text-align: center;
+}
+
+.formatos{
+    border-radius: 40%;
+    float: right;
+    width: 350px;
+    padding-left: 100px;
+    height: 200px;
+}
+
+.formatos:hover{
+    opacity: 50%;
+}
+.centro{
+    float: left;
+    padding-right: 100px;
+    width: 350px;
+}
